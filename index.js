@@ -10,6 +10,23 @@ function calculateBmi(){
 	var bmio = (bmi.toFixed(2));
     console.log(bmio);
 	document.querySelector("#outputtext").innerHTML = "Your BMI is " + bmio;
+	if(bmio <=18.5){
+        result.innerText= "Underweight";
+
+
+    }
+    else if( bmio >18.5 && bmio <=24.9)
+     {
+        result.innerText="Normal";
+    }
+    else if(bmio>24.9 && bmio<=29.9)
+    {
+        result.innerText="OverWeight";
+    }
+    else{
+        result.innerText="Obese";
+    }
+
 }
 btn.addEventListener("click",()=>{
     if(isNaN(weight_val) || isNaN(height_val)){
