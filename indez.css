@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    padding-top: 40px;
+}
+.box{
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    text-align: center;
+    padding:5px;
+    border-radius: 10px;
+    padding-block-start: 20px;
+}
+input[type="text"]{
+    width:290px;
+    height: 25px;
+    margin-block: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+   padding-left: 10px;
+}
+button{
+    cursor: pointer;
+    height: 25px;
+    margin-top: 30px;
+}
+input::placeholder{
+    color:black;
+    padding: 5px;
+}
+#outputtext{
+    margin-top: 40px;
+    color: black;
+    
+}
+@media (max-width:350px){
+    .box{
+        width: 260px;
+        height:  280px;
+
+    }
+    input[type="text"]{
+        width: 250px;
+    }
+}
